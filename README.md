@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <h1 align="center">Snake Game</h1>
 <div align="center">
-  <img src="./favicon/serpent.png" alt="Logo" width="200" height="100">
+  <img src="./favicon/serpent.png" alt="Logo" width="100" height="100">
 </div>
 
 <!-- Présentation du projet -->
