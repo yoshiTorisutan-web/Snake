@@ -1,0 +1,99 @@
+/* Fond de la page */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #1e1e1e; /* Fond sombre */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Conteneur du formulaire */
+.form-container {
+  background-color: #333; /* Gris foncé */
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+  width: 300px;
+  text-align: center;
+  align-items: center;
+}
+
+/* Titre du formulaire */
+.form-container h1 {
+  font-size: 30px;
+  font-family: "Courier New", monospace;
+  color: #2ecc71;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Description sous le titre */
+.form-container p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+/* Champ de saisie */
+#nickname {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd; /* Bordure gris clair */
+  border-radius: 5px;
+  background-color: #444; /* Gris foncé pour le champ */
+  color: #fff; /* Texte en blanc */
+  margin-bottom: 30px;
+  outline: none;
+}
+
+#nickname:focus {
+  border-color: #2ecc71; /* Vert au focus */
+}
+
+/* Bouton Commencer */
+button[type="submit"] {
+  background-color: #2ecc71; /* Vert */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #27ae60; /* Vert plus foncé au survol */
+}
+
+button[type="submit"]:focus {
+  outline: none;
+}
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+  .form-container {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .form-container h1 {
+    font-size: 20px;
+  }
+
+  #nickname {
+    font-size: 14px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
