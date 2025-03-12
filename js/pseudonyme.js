@@ -6,6 +6,6 @@ document
 
     if (nickname) {
       localStorage.setItem("playerNickname", nickname); // Enregistrer le pseudonyme dans le localStorage
-      window.location.href = "game.html"; // Rediriger vers la page du jeu
+      window.location.href = "/html/game.html"; // Rediriger vers la page du jeu
     }
   });
