@@ -1,7 +1,7 @@
 /* Fond de la page */
 body {
   font-family: "Arial", sans-serif;
-  background-color: #1e1e1e; /* Fond sombre */
+  background-color: #1e1e1e;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -14,55 +14,57 @@ body {
 
 /* Conteneur du formulaire */
 .form-container {
-  background-color: #333; /* Gris foncé */
-  padding: 100px;
+  background-color: #333;
+  padding: 50px; /* Réduit le padding */
   border-radius: 10px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
-  width: 300px;
+  max-width: 90%; /* Empêche d’être trop large */
+  width: 350px; /* Taille de base */
   text-align: center;
   align-items: center;
 }
 
 /* Titre du formulaire */
 .form-container h1 {
-  font-size: 30px;
+  font-size: 28px;
   font-family: "Courier New", monospace;
   color: #2ecc71;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
-  margin-bottom: 40px;
-  text-align: center;
+  margin-bottom: 30px; /* Réduit l’espace */
 }
 
 /* Description sous le titre */
 .form-container p {
   font-size: 16px;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /* Champ de saisie */
 #nickname {
-  width: 100%;
+  width: 80%; /* Réduit la largeur */
+  max-width: 250px; /* Empêche qu'il ne soit trop large */
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #ddd; /* Bordure gris clair */
+  border: 2px solid #ddd;
   border-radius: 5px;
-  background-color: #444; /* Gris foncé pour le champ */
-  color: #fff; /* Texte en blanc */
-  margin-bottom: 30px;
+  background-color: #444;
+  color: #fff;
+  margin-bottom: 20px;
   outline: none;
+  text-align: center; /* Centre le texte */
 }
 
 #nickname:focus {
-  border-color: #2ecc71; /* Vert au focus */
+  border-color: #2ecc71;
 }
 
 /* Bouton Commencer */
 button[type="submit"] {
-  background-color: #2ecc71; /* Vert */
+  background-color: #2ecc71;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
@@ -70,7 +72,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #27ae60; /* Vert plus foncé au survol */
+  background-color: #27ae60;
 }
 
 button[type="submit"]:focus {
@@ -80,20 +82,25 @@ button[type="submit"]:focus {
 /* Mobile friendly */
 @media (max-width: 600px) {
   .form-container {
-    width: 80%;
     padding: 20px;
+    max-width: 95%;
   }
 
   .form-container h1 {
-    font-size: 20px;
+    font-size: 22px;
+  }
+
+  .form-container p {
+    font-size: 14px;
   }
 
   #nickname {
     font-size: 14px;
+    padding: 8px;
   }
 
   button[type="submit"] {
     font-size: 14px;
-    padding: 8px 16px;
+    padding: 10px 16px;
   }
 }

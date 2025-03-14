@@ -301,3 +301,43 @@ body {
 #gameCanvas {
   z-index: 1;
 }
+
+/* Responsif : Sur mobile */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 0;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .game-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    order: -1;
+  }
+
+  #gameCanvas {
+    width: 100%;
+    height: 300px;
+  }
+
+  #leaderboard {
+    padding: 10px 15px;
+  }
+
+  .game-over-popup {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .game-over-popup button {
+    width: 100%;
+  }
+}
